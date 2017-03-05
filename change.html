@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link type="text/css" href="../../node_modules/flat-ui/dist/css/flat-ui.css" rel="stylesheet">
+    <link type="text/css" href="../../public/css/change.css" rel="stylesheet">
+    <script src="../../public/js/init.js"></script>
+    <script src="../../public/js/reset.js"></script>
+  </head>
+  <body>
+
+<!--//表单修改................................................-->
+<form name="input" action="html_form_action.php" method="get">
+    <div id="email">Email</div>
+    <div id="motto">Motto</div>
+    <div id="int">Introduction</div>
+
+    <input id="email1" type="text" class="form-control input-sm" placeholder="Small" />
+    <input id="motto1" type="text" class="form-control input-sm" placeholder="Small" />
+    <input id="int1" type="text" class="form-control input-sm" placeholder="Small" />
+
+    <input type="submit" value="Submit" id="submit" class="btn btn-success">
+</form>
+<!--//表单修改................................................-->
+    <form action="UploadFile.ashx" method="post" enctype="multipart/form-data">
+    <input id="upload" class="btn btn-info" type="file" name="uploadFile" />
+    <input id="change" class="btn btn-success" type="submit" value="OK" />
+    </form>
+    
+
+    <button id="reset" class="btn btn-warning" onclick="Reset()">Reset</button>
+    <script>Init();</script>
+
+    <img id="myicon" src="Retina-Ready.png" alt="icon">
+
+  </body>
+</html>
